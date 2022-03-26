@@ -85,6 +85,7 @@ body{
     font-size: 18px;    
     padding: 20px 0;
     display: inline-block;
+    letter-spacing: 1px;
 }
 .textodecaja a:hover {
     color: var(--cyan);
@@ -92,6 +93,9 @@ body{
 
 p{
 color: var(--softBlue);
+justify-content: justify;
+font-size: 18px;
+font-weight:300;
 }
 
 .flex {
@@ -111,11 +115,14 @@ color: var(--softBlue);
     color: var(--cyan);
     font-weight: 600;
     padding-left: 10px;
+    font-size: 18px;
 }
 
 .days p{
     padding-left: 10px;
+    color: var(--softBlue);
 }
+
 
 hr{
     border-color:hsl(215, 32%, 27%);
@@ -128,8 +135,8 @@ hr{
 }
 
 .autor img{
-    width: 72px;
-    height: 72px;
+    width: 69px;
+    height: 69px;
     border-radius: 50%;
     border:2px solid var(--white);
     margin-right: 15px;

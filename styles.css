@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primarios*/
+
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsla(178, 100%, 50%, 0.5);
+
+    /*Secundarios*/
+
+    --veryDarkBlue (main BG): hsl(217, 54%, 11%);
+    --Verydarkblue (card BG): hsl(216, 50%, 16%);
+    --Verydarkblue (line): hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /*- Font size (paragraph): 18px*/
+
+}
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.img-top {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-top img{
+    width: 100%;
+    display: block;
+}
+
+.img-debajo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--cyan);
+    display: none;
+}
+
+.img-debajo img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-top:hover .img-debajo {
+    display: block;
+}
+
+.textodecaja a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;   
+    font-size: 18px;    
+    padding: 20px 0;
+    display: inline-block;
+}
+.textodecaja a:hover {
+    color: var(--cyan);
+}
+
+p{
+color: var(--softBlue);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.eth,.days{
+    display: flex;
+    align-items: center;
+    
+}
+
+.eth p{
+    color: var(--cyan);
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.days p{
+    padding-left: 10px;
+}
+
+hr{
+    border-color:hsl(215, 32%, 27%);
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.autor img{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border:2px solid var(--white);
+    margin-right: 15px;
+}
+
+.autor p a.name {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.autor p a.name:hover {
+    color: var(--veryDarkBlue);
+}
